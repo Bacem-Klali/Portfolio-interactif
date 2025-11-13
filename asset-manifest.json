@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bacem-Klali/Portfolio-interactif/static/css/main.5977bb14.css",
+    "main.js": "/Bacem-Klali/Portfolio-interactif/static/js/main.ce72f166.js",
+    "index.html": "/Bacem-Klali/Portfolio-interactif/index.html",
+    "main.5977bb14.css.map": "/Bacem-Klali/Portfolio-interactif/static/css/main.5977bb14.css.map",
+    "main.ce72f166.js.map": "/Bacem-Klali/Portfolio-interactif/static/js/main.ce72f166.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5977bb14.css",
+    "static/js/main.ce72f166.js"
+  ]
+}
