@@ -1,0 +1,54 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #ddd;
+  --input-bg: #ffffff;
+  --input-text: #000000;
+  --muted: #666;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --border-color: #444;
+  --input-bg: #1e1e1e;
+  --input-text: #f5f5f5;
+  --muted: #aaa;
+}
+
+.contact-page {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-page label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.contact-page input,
+.contact-page textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  transition: all 0.3s ease;
+}
+
+.contact-page textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+  outline: none;
+  border-color: var(--text-color);
+}

@@ -1,0 +1,77 @@
+
+:root {
+  --bg-color: #ffffff;     
+  --text-color: #000000;    
+  --accent: #0077cc;         
+  --border-color: #eee;      
+  --btn-bg: transparent;
+  --btn-border: #ddd;
+  --btn-text: #000;
+  --toggle-hover: rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --accent: #66aaff;
+  --border-color: #333;
+  --btn-bg: transparent;
+  --btn-border: #555;
+  --btn-text: #f5f5f5;
+  --toggle-hover: rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.brand {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.nav-links a {
+  margin-right: 12px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.theme-toggle-btn {
+  margin-right: 10px;
+  background: none;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: inherit;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--toggle-hover);
+}
